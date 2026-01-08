@@ -49,6 +49,7 @@ const wishList = document.getElementById("wish-list");
 
 const q = query(
     collection(db, "wishes"),
+    orderBy("hearts", "desc"),
     orderBy("createdAt", "desc")
 );
 
